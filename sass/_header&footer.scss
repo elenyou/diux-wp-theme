@@ -1,0 +1,72 @@
+.header-custom {
+  position: fixed;
+  z-index: 3000;
+  width: 100%;
+  height: 5rem;
+}
+.header-custom.solid {
+  background-color: $color-teal-opacity;
+}
+
+nav {
+  font-family: "Nunito", sans-serif;
+  .navbar-brand {
+    width: 4.3rem;
+    height: 2.9rem;
+    @include screen("lg") {
+      padding: 0 2rem;
+    }
+    @include screen("xl") {
+      padding: 0 4rem;
+    }
+  }
+  .nav {
+    padding: 0.5rem 1rem;
+    background-color: $color-teal;
+    @include screen("md") {
+      background-color: transparent;
+      padding: 0;
+    }
+    @include screen("lg") {
+      padding: 1rem 2rem;
+    }
+    @include screen("xl") {
+      padding: 1rem 4rem;
+    }
+  }
+}
+
+footer {
+  height: 19rem;
+  color: $color-white;
+  font-family: Nunito;
+  @include screen("md") {
+    height: 20rem;
+  }
+  @include screen("lg") {
+    height: 14rem;
+  }
+  form {
+    .input {
+      @include screen("md") {
+        height: 3.2rem;
+        width: 20rem;
+        font-size: 1rem;
+        padding: 0.7rem;
+      }
+      @include screen("lg") {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    @include screen("lg") {
+      flex-direction: row;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

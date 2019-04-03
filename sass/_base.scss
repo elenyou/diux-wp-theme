@@ -1,0 +1,197 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+//home page
+#home {
+  height: 100vh;
+  letter-spacing: 5px;
+  .hero {
+    @include screen("lg") {
+      justify-content: space-between;
+    }
+    .hero-image {
+      display: none;
+      @include screen("lg") {
+        display: inline;
+      }
+      img {
+        width: 90%;
+      }
+    }
+    .hero-text {
+      align-items: center;
+      @include screen("lg") {
+        align-items: flex-end;
+      }
+      @include screen("xl") {
+        padding-left: 12rem;
+      }
+      @include screen("hd") {
+        padding-left: 14rem;
+      }
+    }
+  }
+  .more {
+    margin-top: 7rem;
+    @include screen("lg") {
+      margin-top: 0;
+    }
+  }
+}
+
+#about {
+  color: $color-dark;
+  .about-block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include screen("lg") {
+      flex-direction: row;
+      align-items: stretch;
+    }
+    .block-image {
+      color: $color-grey;
+      img {
+        width: 45%;
+        @include screen("md") {
+          width: 80%;
+        }
+      }
+    }
+    .block-text {
+      width: 90%;
+      line-height: 1.2rem;
+      @include screen("md") {
+        line-height: 2rem;
+        width: 85%;
+      }
+      @include screen("lg") {
+        width: 50%;
+        margin-left: 5rem;
+      }
+    }
+  }
+}
+
+#work {
+  .work-block {
+    flex-direction: column;
+    justify-content: center;
+    @include screen("md") {
+      width: 80%;
+    }
+    @include screen("lg") {
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: space-between;
+      width: 80%;
+    }
+    @include screen("xl") {
+      width: 75%;
+    }
+    .block-big {
+      @include screen("lg") {
+        width: 40%;
+      }
+      &__text {
+        display: none;
+        @include screen("lg") {
+          display: block;
+          width: 80%;
+        }
+        @include screen("xl") {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+// work page
+#work-list {
+  .item {
+    flex-direction: column;
+    width: 80%;
+    @include screen("md") {
+      width: 80%;
+    }
+    @include screen("lg") {
+      flex-direction: row;
+      padding: 3rem 0;
+      width: 95%;
+    }
+    .left {
+      @include screen("lg") {
+        width: 40%;
+      }
+      .item-image {
+        width: 100%;
+        @include screen("lg") {
+          width: 36rem;
+        }
+      }
+      .item-name {
+        margin-top: -5rem;
+        margin-left: -1rem;
+        @include screen("lg") {
+          margin-top: -12rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+    .right {
+      padding: 3rem 0;
+      @include screen("lg") {
+        padding: 1rem 1.5rem;
+        width: 45%;
+        background-color: $color-white-opacity;
+        color: $color-dark;
+      }
+      @include screen("xl") {
+        width: 30%;
+        padding: 1.5rem 2rem;
+      }
+    }
+  }
+}
+
+//contact
+#contact {
+  @include screen("md") {
+    height: 80vh;
+  }
+  form {
+    .input {
+      @include screen("md") {
+        height: 2.7rem;
+        width: 30rem;
+        font-size: 1rem;
+        padding: 0.7rem;
+      }
+      @include screen("lg") {
+        margin: 1rem;
+        width: 25rem;
+      }
+      &__textarea {
+        height: 10rem;
+        @include screen("md") {
+          height: 14rem;
+        }
+        @include screen("lg") {
+          height: 12rem;
+        }
+      }
+    }
+  }
+}

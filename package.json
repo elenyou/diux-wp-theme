@@ -1,0 +1,17 @@
+{
+  "name": "sass-starter-pack",
+  "version": "1.0.0",
+  "description": "Boiler plate for sass projects",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "author": "sergeycode",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "4.0.2",
+    "gulp-autoprefixer": "6.0.0"
+  }
+}

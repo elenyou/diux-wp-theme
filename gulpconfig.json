@@ -1,0 +1,16 @@
+{
+  "browserSyncOptions": {
+    "proxy": "localhost/",
+    "notify": false
+  },
+  "browserSyncWatchFiles": [
+    "./style.css",
+    "./scripts/scripts.js",
+    "./**/*.php"
+  ],
+  "paths": {
+    "js": "./js",
+    "css": "./",
+    "sass": "./sass"
+  }
+}

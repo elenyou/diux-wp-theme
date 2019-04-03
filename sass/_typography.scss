@@ -1,0 +1,65 @@
+a:hover {
+  text-decoration: none;
+}
+
+.second-font {
+  font-family: "Rubik", sans-serif;
+}
+
+.letter-spacing {
+  letter-spacing: 1.5px;
+}
+
+.letter-spacing-big {
+  letter-spacing: 7px;
+  @include screen('md') {
+    letter-spacing: 10px;
+}
+}
+
+p {
+  margin: 0;
+  @include screen("md") {
+    font-size: 1.2rem;
+  }
+}
+
+h1 {
+  @include screen("md") {
+    font-size: 5rem;
+  }
+  @include screen("xl") {
+    font-size: 6rem;
+  }
+}
+
+h4 {
+  @include screen("md") {
+    font-size: 2rem;
+  }
+  @include screen("xl") {
+    font-size: 2.2rem;
+  }
+  @include screen("hd") {
+    font-size: 2.4rem;
+  }
+  @include screen("fhd") {
+    font-size: 2.6rem;
+  }
+}
+
+
+h5 {
+    @include screen("md") {
+      font-size: 1.9rem;
+    }
+    @include screen("xl") {
+      font-size: 2rem;
+    }
+    @include screen("hd") {
+      font-size: 2.1rem;
+    }
+    @include screen("fhd") {
+      font-size: 2.2rem;
+    }
+  }
